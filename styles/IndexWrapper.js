@@ -79,7 +79,7 @@ export const IndexWrapper = styled.div`
       }
     }
 
-    .cards {
+    .show-cards {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -88,6 +88,52 @@ export const IndexWrapper = styled.div`
       flex-wrap: wrap;
 
       /* flex-wrap: wrap; */
+    }
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    /* margin-top: 50px; */
+    padding-bottom: 100px;
+
+    .heading-div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .heading-group {
+        .heading {
+          font-family: Libre Baskerville;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 40px;
+          color: white;
+        }
+        .heading-underline {
+          margin-top: 3px;
+          border: 1.5px solid #0259eb;
+          background-color: #0259eb;
+          width: 50px;
+        }
+      }
+      .util {
+        color: white;
+        opacity: 0.6;
+        display: flex;
+        align-items: center;
+        .page {
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .review-cards {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 `;

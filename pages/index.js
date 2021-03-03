@@ -8,6 +8,10 @@ import EventAvailableIcon from "@material-ui/icons/EventAvailable";
 
 import { ShowCard } from "./../components/ShowCard/ShowCard";
 
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import { ReviewCard } from "./../components/ReviewCard/ReviewCard";
+
 export default function Home() {
   const [view, setView] = useState(false);
 
@@ -58,7 +62,7 @@ export default function Home() {
               {!view ? "View All" : "Hide All"}
             </div>
           </div>
-          <div className="cards">
+          <div className="show-cards">
             <ShowCard tag={"Folk"} name={"Benny Dayal"} />
             <ShowCard tag={"Bollywood"} name={"Vijay Yesuda"} />
             <ShowCard tag={"Folk"} name={"Andrea Jeremiah"} />
@@ -73,6 +77,27 @@ export default function Home() {
                 <ShowCard tag={"Folk"} name={"Shilpa Rao"} />
               </>
             )}
+          </div>
+        </div>
+        <div className="review">
+          <div className="heading-div">
+            <div className="heading-group">
+              <div className="heading">Reviews</div>
+              <div className="heading-underline"></div>
+            </div>
+            <div className="util">
+              <span className="page">1/12</span> &ensp;
+              <ArrowBackIcon fontSize={"small"} /> &ensp;
+              <ArrowForwardIcon fontSize={"small"} />
+            </div>
+          </div>
+          <div className="review-cards">
+            <ReviewCard name={"Hellen Jummy"} location={"🇺🇸 Palo Alto, CA"} />
+            <ReviewCard
+              name={"Isaac Oluwatemilorun"}
+              location={"🇮🇹 Palo Alto, CA"}
+            />
+            <ReviewCard name={"Hellen Jummy"} location={"🇺🇸 Palo Alto, CA"} />
           </div>
         </div>
       </IndexWrapper>
