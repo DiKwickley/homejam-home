@@ -27,7 +27,6 @@ export default function Home() {
             and never miss out.
           </div>
           <div className="progress-div">
-            {/* This whole progress area can be put in a loop */}
             <ProgressCircle
               number={0}
               label={"Label1"}

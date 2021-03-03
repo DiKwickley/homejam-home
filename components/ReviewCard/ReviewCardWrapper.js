@@ -8,7 +8,7 @@ export const ReviewCardWrapper = styled.div`
     flex-direction: column;
     padding: 0 25px;
     padding-bottom: 40px;
-    width: 345px;
+    width: 330px;
     box-shadow: 10px -10px #5293e8;
     margin-right: 35px;
 
