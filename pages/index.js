@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./../components/Layout/Layout";
 import { IndexWrapper } from "../styles/IndexWrapper";
+import Navbar from "./../components/NavBar/NavBar";
 
 import { ProgressCircle } from "./../components/ProgressCircle/ProgressCircle";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
@@ -16,9 +17,10 @@ export default function Home() {
   const [view, setView] = useState(false);
 
   return (
-    <Layout title="HOME">
+    <Layout title="Home | HomeJam">
       <IndexWrapper>
         <div className="intro">
+          <Navbar />
           <div className="heading">Cari Cari</div>
           <div className="sub-heading">
             Live from their sofa to yours. Get closer to your favorite artists,
