@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Layout from "./../components/Layout/Layout";
 import { IndexWrapper } from "../styles/IndexWrapper";
 
@@ -5,7 +6,11 @@ import { ProgressCircle } from "./../components/ProgressCircle/ProgressCircle";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import EventAvailableIcon from "@material-ui/icons/EventAvailable";
 
+import { ShowCard } from "./../components/ShowCard/ShowCard";
+
 export default function Home() {
+  const [view, setView] = useState(false);
+
   return (
     <Layout title="HOME">
       <IndexWrapper>
@@ -41,6 +46,33 @@ export default function Home() {
               icon={<EventAvailableIcon fontSize={"large"} />}
               on={false}
             />
+          </div>
+        </div>
+        <div className="upcoming">
+          <div className="heading-div">
+            <div className="heading-group">
+              <div className="heading">Upcoming Shows</div>
+              <div className="heading-underline"></div>
+            </div>
+            <div className="util" onClick={() => setView(!view)}>
+              {!view ? "View All" : "Hide All"}
+            </div>
+          </div>
+          <div className="cards">
+            <ShowCard tag={"Folk"} name={"Benny Dayal"} />
+            <ShowCard tag={"Bollywood"} name={"Vijay Yesuda"} />
+            <ShowCard tag={"Folk"} name={"Andrea Jeremiah"} />
+            <ShowCard tag={"Folk"} name={"Shilpa Rao"} />
+            {view && (
+              <>
+                <ShowCard tag={"Folk"} name={"Benny Dayal"} />
+                <ShowCard tag={"Bollywood"} name={"Vijay Yesuda"} />
+                <ShowCard tag={"Folk"} name={"Andrea Jeremiah"} />
+                <ShowCard tag={"Folk"} name={"Shilpa Rao"} />
+                <ShowCard tag={"Folk"} name={"Andrea Jeremiah"} />
+                <ShowCard tag={"Folk"} name={"Shilpa Rao"} />
+              </>
+            )}
           </div>
         </div>
       </IndexWrapper>

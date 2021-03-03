@@ -46,4 +46,48 @@ export const IndexWrapper = styled.div`
       justify-content: center;
     }
   }
+
+  .upcoming {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    margin-top: 120px;
+
+    .heading-div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .heading-group {
+        .heading {
+          font-family: Libre Baskerville;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 40px;
+          color: white;
+        }
+        .heading-underline {
+          margin-top: 3px;
+          border: 1.5px solid #0259eb;
+          background-color: #0259eb;
+          width: 50px;
+        }
+      }
+      .util {
+        color: #e5c558;
+        cursor: pointer;
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      /* overflow-x: auto; this in mobile view*/
+      margin-bottom: 100px;
+      flex-wrap: wrap;
+
+      /* flex-wrap: wrap; */
+    }
+  }
 `;
