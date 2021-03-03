@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const IndexWrapper = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
-
-  min-height: 200vh;
+  /* min-height: 200vh; */
   .intro {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, transparent, #0a0b1b),
+    background-image: linear-gradient(
+        180deg,
+        rgba(5, 11, 20, 0.28) 0%,
+        rgba(1, 13, 32, 0.69) 67.53%,
+        #0a0b1a 85.33%
+      ),
       url("/home-bg-img.png");
 
     background-position: top;
@@ -36,6 +38,12 @@ export const IndexWrapper = styled.div`
       opacity: 0.6;
       /* margin-top: 25px; */
       margin-left: 150px;
+    }
+    .progress-div {
+      margin-top: 250px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 `;
