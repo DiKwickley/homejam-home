@@ -26,11 +26,17 @@ export const ProgressCircleWrapper = styled.div`
       margin: 12px 0;
       font-size: 24px;
       font-family: Libre Baskerville;
+      @media only screen and (max-width: 425px) {
+        margin: 5px 0;
+      }
     }
     .label {
       font-family: Nunito;
       font-size: 16px;
       opacity: 0.6;
+      @media only screen and (max-width: 425px) {
+        font-size: 11px;
+      }
     }
   }
 `;

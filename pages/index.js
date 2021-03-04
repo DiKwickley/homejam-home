@@ -6,6 +6,8 @@ import Navbar from "./../components/NavBar/NavBar";
 import { ProgressCircle } from "./../components/ProgressCircle/ProgressCircle";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import EventAvailableIcon from "@material-ui/icons/EventAvailable";
+import PeopleIcon from "@material-ui/icons/People";
+import VideocamIcon from "@material-ui/icons/Videocam";
 
 import { ShowCard } from "./../components/ShowCard/ShowCard";
 
@@ -28,27 +30,27 @@ export default function Home() {
           </div>
           <div className="progress-div">
             <ProgressCircle
-              number={0}
-              label={"Label1"}
+              number={456}
+              label={"Likes everyday"}
               icon={<FavoriteBorderIcon fontSize={"large"} />}
               on={true}
             />
             <ProgressCircle
-              number={0}
-              label={"Label2"}
+              number={745}
+              label={"Online Events"}
               icon={<EventAvailableIcon fontSize={"large"} />}
               on={false}
             />
             <ProgressCircle
-              number={0}
-              label={"Label2"}
-              icon={<EventAvailableIcon fontSize={"large"} />}
+              number={"+10k"}
+              label={"Users"}
+              icon={<PeopleIcon fontSize={"large"} />}
               on={false}
             />
             <ProgressCircle
-              number={0}
-              label={"label2"}
-              icon={<EventAvailableIcon fontSize={"large"} />}
+              number={"+2"}
+              label={"Views everyday"}
+              icon={<VideocamIcon fontSize={"large"} />}
               on={false}
             />
           </div>
